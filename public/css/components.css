@@ -1,0 +1,141 @@
+.home-top-slider .owl-carousel {
+  position: relative;
+}
+.home-top-slider .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: -40px;
+}
+.home-top-slider .owl-carousel .owl-dots button.owl-dot {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.home-top-slider .owl-carousel .owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+.home-top-slider .owl-stage-outer {
+  overflow: visible;
+}
+.home-top-slider .owl-stage-outer .owl-item:not(.active) {
+  display: none;
+}
+.home-top-slider .owl-stage-outer .owl-item.active {
+  display: block;
+}
+.home-top-slider .slide--text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-right: 25px;
+  position: relative;
+}
+.home-top-slider .slide__title {
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.home-top-slider .slide__author {
+  text-transform: uppercase;
+  display: block;
+  height: 100%;
+}
+.home-top-slider .slide__footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.marquee {
+  margin: 8.5rem 0;
+}
+.marquee h1 {
+  animation: scroll-x 10s linear infinite;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 140px;
+}
+.marquee .btn-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.destaquem-slider .des-carousel .owl-stage {
+  display: flex;
+}
+.destaquem-slider .des-carousel .owl-stage .owl-item {
+  width: 350px !important;
+}
+.destaquem-slider .slide-wrapper {
+  width: 380px !important;
+  margin-right: 1.5rem;
+}
+.destaquem-slider .slide-wrapper .des-slide {
+  padding: 5px;
+  padding-right: 10px;
+}
+.destaquem-slider .slide-wrapper .des-slide:after {
+  right: -10px;
+  top: 5px;
+  height: 90%;
+}
+.destaquem-slider .slide-wrapper .des-slide--img {
+  position: relative;
+  height: 250px;
+  object-fit: cover;
+}
+.destaquem-slider .slide-wrapper .des-slide--tags {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+.destaquem-slider .slide-wrapper .des-slide--tags span {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  display: inline-block;
+  border-radius: 8px;
+  height: 20px;
+  line-height: 1;
+}
+.destaquem-slider .slide-wrapper .des-slide--tags span:first-of-type {
+  color: #000;
+  background-color: #fff;
+}
+.destaquem-slider .slide-wrapper .des-slide--tags span:last-of-type {
+  color: #fff;
+  background-color: #000;
+}
+.destaquem-slider .slide-wrapper .des-slide--text {
+  padding: 1rem 0 1.5rem 0;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+}
+.destaquem-slider .slide-wrapper .des-slide--text p {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.destaquem-slider .slide-wrapper .des-slide--footer {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+}
+.destaquem-slider .slide-wrapper .des-slide--footer p {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=components.css.map */
