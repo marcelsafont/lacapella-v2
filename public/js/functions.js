@@ -20,7 +20,9 @@ $(window).on("load", function () {
   $(".des-carousel").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: true,
+    infinite: false,
+    variableWidth: false,
+    swipeToSlide: true,
   });
 });
 
