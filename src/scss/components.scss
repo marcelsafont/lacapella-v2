@@ -80,28 +80,20 @@
 }
 
 .destaquem-slider {
-  .row.borders:first-of-type {
+  .slider-carousel {
+    margin-left: calc(100% - 500px / 2);
+  }
+  .row.borders {
     padding-bottom: 1.5rem;
   }
   .col-md-3 {
     display: flex;
     justify-content: flex-end;
   }
-  .des-carousel {
-    .owl-stage {
-      display: flex;
-      .owl-item {
-        width: 350px !important;
-      }
-    }
-    // .slick-track {
-    //   transform: translate3d(0, 0, 0) !important;
-    // }
-  }
+
   .slide-wrapper {
-    width: 380px !important;
-    margin-right: 1.5rem;
     .des-slide {
+      width: 380px !important;
       padding: 5px;
       padding-right: 10px;
       &:after {
