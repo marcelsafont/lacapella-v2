@@ -80,6 +80,13 @@
 }
 
 .destaquem-slider {
+  .row.borders:first-of-type {
+    padding-bottom: 1.5rem;
+  }
+  .col-md-3 {
+    display: flex;
+    justify-content: flex-end;
+  }
   .des-carousel {
     .owl-stage {
       display: flex;

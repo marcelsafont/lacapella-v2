@@ -29,6 +29,7 @@
       integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.10.2/jquery.hoverIntent.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
@@ -53,11 +54,26 @@
           <span></span>
         </div>
         <ul>
-          <li><a href="/page-one">Centre d'art</a></li>
-          <li><a href="/">Programació</a></li>
-          <li><a href="/">Espai W</a></li>
-          <li><a href="/">Publicaciones</a></li>
-          <li>
+          <li class="menu-item"><a href="/page-one">Centre d'art</a></li>
+          <li class="menu-item menu-item--expanded">
+            <a href="/">Programació</a>
+            <span class="mobile-arrow"></span>
+            <div class="wrapper-menu">
+              <ul>
+                <li><a href="/">Agenda</a></li>
+                <li><a href="/">Exposicions</a></li>
+                <li><a href="/">Projectes no expositius</a></li>
+                <li><a href="/">Programa d'estudis</a></li>
+                <li><a href="/">Mediació</a></li>
+                <li><a href="/">Concéntric</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item"><a href="/">Espai W</a></li>
+          <li class="menu-item menu-item--expanded">
+            <a href="/">Publicaciones</a>
+          </li>
+          <li class="menu-item">
             <a href="/">
               <img src="assets/search-icon.svg" />
             </a>

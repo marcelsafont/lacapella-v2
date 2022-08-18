@@ -11,6 +11,16 @@ $(document).ready(function () {
     infinite: false,
     centerMode: true,
   });
+
+  //dropdown hover intent
+  $(".menu-item--expanded > a").hoverIntent(
+    function () {
+      $(this).parent().find(".wrapper-menu").addClass("open-desktop");
+    },
+    function () {
+      $(this).parent().find(".wrapper-menu").removeClass("open-desktop");
+    }
+  );
 });
 
 // $(document).ready(function () {

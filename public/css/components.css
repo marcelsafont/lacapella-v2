@@ -74,6 +74,13 @@
     transform: translateX(-100%);
   }
 }
+.destaquem-slider .row.borders:first-of-type {
+  padding-bottom: 1.5rem;
+}
+.destaquem-slider .col-md-3 {
+  display: flex;
+  justify-content: flex-end;
+}
 .destaquem-slider .des-carousel .owl-stage {
   display: flex;
 }
