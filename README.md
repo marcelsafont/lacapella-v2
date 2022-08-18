@@ -1,3 +1,6 @@
+# url
+https://fastidious-druid-eefcba.netlify.app/
+
 # installation and basic steps
 
 ## after clone the repo
