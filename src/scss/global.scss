@@ -20,82 +20,85 @@ img {
 }
 
 // EFFECTS / BORDERS ------
-// .borders {
-//   border: 1px solid #000;
-//   padding: 10px;
-//   position: relative;
-//   &:before {
-//     content: "";
-//     width: calc(100% - 15px);
-//     border-left: 10px solid #fff;
-//     border-right: 10px solid #fff;
-//     height: 10px;
-//     top: -2px;
-//     left: -2px;
-//     position: absolute;
-//     display: block;
-//   }
-//   &:after {
-//     content: "";
-//     width: calc(100% - 15px);
-//     // width: 100%;
-//     border-left: 10px solid #fff;
-//     border-right: 10px solid #fff;
-//     height: 10px;
-//     bottom: -2px;
-//     left: -2px;
-//     position: absolute;
-//     display: block;
-//   }
-//   &.bt-0 {
-//     border-top: 0;
-//   }
-// }
+.borders {
+  border: 1px solid #000;
+  padding: 10px;
+  position: relative;
+  &:before {
+    content: "";
+    width: calc(100% + 5px);
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    height: 10px;
+    top: -2px;
+    left: -2px;
+    position: absolute;
+    display: block;
+  }
+  &:after {
+    content: "";
+    width: calc(100% + 5px);
+    // width: 100%;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    height: 10px;
+    bottom: -2px;
+    left: -2px;
+    position: absolute;
+    display: block;
+  }
+  &.bt-0 {
+    border-top: 0;
+  }
+  &.br-0{
+    border-right:0;
+  }
+}
 
 .borders + .borders {
   border-left: 0;
 }
 
-.borders {
-  padding: 10px;
-  position: relative;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-  &:before {
-    content: "";
-    background: #000;
-    width: 1px;
-    position: absolute;
-    left: -5px;
-    top: 5px;
-    height: 80%;
-  }
-  &:after {
-    content: "";
-    background: #000;
-    width: 1px;
-    height: 80%;
-    position: absolute;
-    right: -5px;
-    top: 5px;
-  }
-  &.bt-0 {
-    border-top: 0;
-  }
-  &.bb-0 {
-    border-bottom: 0;
-  }
-  &.br-0 {
-    &:after {
-      width: 0;
-    }
-  }
-  &.bl-0 {
-    &:before {
-      width: 0;
-    }
-  }
-}
+// .borders {
+//   padding: 10px;
+//   position: relative;
+//   border-bottom: 1px solid #000;
+//   border-top: 1px solid #000;
+//   &:before {
+//     content: "";
+//     background: #000;
+//     width: 1px;
+//     position: absolute;
+//     left: -5px;
+//     top: 5px;
+//     height: 80%;
+//   }
+//   &:after {
+//     content: "";
+//     background: #000;
+//     width: 1px;
+//     height: 80%;
+//     position: absolute;
+//     right: -5px;
+//     top: 5px;
+//   }
+//   &.bt-0 {
+//     border-top: 0;
+//   }
+//   &.bb-0 {
+//     border-bottom: 0;
+//   }
+//   &.br-0 {
+//     &:after {
+//       width: 0;
+//     }
+//   }
+//   &.bl-0 {
+//     &:before {
+//       width: 0;
+//     }
+//   }
+// }
 
 .br-only {
   position: relative;
