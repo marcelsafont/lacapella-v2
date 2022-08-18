@@ -22,6 +22,8 @@ $(window).on("load", function () {
     variableWidth: false,
     swipeToSlide: true,
     arrows: false,
+    slidesToScroll: 1,
+    slidesToShow: 4,
   });
 });
 

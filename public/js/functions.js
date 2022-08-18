@@ -23,6 +23,7 @@ $(window).on("load", function () {
     swipeToSlide: true,
     arrows: false,
     slidesToScroll: 1,
+    slidesToShow: 4,
   });
 });
 

@@ -74,9 +74,6 @@
     transform: translateX(-100%);
   }
 }
-.destaquem-slider .slider-carousel {
-  margin-left: calc(100% - 250px);
-}
 .destaquem-slider .row.borders {
   padding-bottom: 1.5rem;
 }
@@ -88,6 +85,7 @@
   width: 380px !important;
   padding: 5px;
   padding-right: 10px;
+  margin-right: 1.5rem;
 }
 .destaquem-slider .slide-wrapper .des-slide:after {
   right: -10px;
@@ -140,7 +138,6 @@
 }
 
 .slider-carousel {
-  margin-left: calc((100% - 1400px) / 2);
   overflow: hidden;
 }
 

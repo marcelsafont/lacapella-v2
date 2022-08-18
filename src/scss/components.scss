@@ -80,9 +80,9 @@
 }
 
 .destaquem-slider {
-  .slider-carousel {
-    margin-left: calc(100% - 500px / 2);
-  }
+  // .slider-carousel {
+  //   margin-left: calc(100% - 500px / 2);
+  // }
   .row.borders {
     padding-bottom: 1.5rem;
   }
@@ -96,6 +96,7 @@
       width: 380px !important;
       padding: 5px;
       padding-right: 10px;
+      margin-right: 1.5rem;
       &:after {
         right: -10px;
         top: 5px;
@@ -151,7 +152,7 @@
   }
 }
 
-.slider-carousel{
-  margin-left: calc((100% - 1400px)/2);
+.slider-carousel {
+  // margin-left: calc((100% - 1400px) / 2);
   overflow: hidden;
 }
