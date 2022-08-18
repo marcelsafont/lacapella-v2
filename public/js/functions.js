@@ -4,13 +4,6 @@ $(document).ready(function () {
     nav: false,
     dots: true,
   });
-  $(".des-carousel").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    variableWidth: false,
-    infinite: false,
-    centerMode: true,
-  });
 
   //dropdown hover intent
   $(".menu-item--expanded > a").hoverIntent(
@@ -21,6 +14,14 @@ $(document).ready(function () {
       $(this).parent().find(".wrapper-menu").removeClass("open-desktop");
     }
   );
+});
+
+$(window).on("load", function () {
+  $(".des-carousel").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+  });
 });
 
 // $(document).ready(function () {
