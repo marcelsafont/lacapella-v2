@@ -14,9 +14,6 @@ $(document).ready(function () {
       $(this).parent().find(".wrapper-menu").removeClass("open-desktop");
     }
   );
-});
-
-$(window).on("load", function () {
   $(".des-carousel").slick({
     infinite: false,
     variableWidth: false,
