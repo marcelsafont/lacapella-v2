@@ -18,9 +18,9 @@
   }
   .owl-stage-outer {
     overflow: visible;
-    .owl-item:not(.active) {
-      display: none;
-    }
+    // .owl-item:not(.active) {
+    //   display: none;
+    // }
     .owl-item.active {
       display: block;
     }
@@ -146,26 +146,23 @@
           text-transform: uppercase;
         }
       }
-      
     }
-    &:first-child .des-slide{
-      &:before{
+    &:first-child .des-slide {
+      &:before {
         content: "";
         border-right: 1px solid #000;
-        left:0;
+        left: 0;
         top: -10px;
         width: 0;
         bottom: 0;
         height: 100%;
         position: absolute;
-        
       }
     }
   }
 }
 
 .slider-carousel {
-  padding-top:10px;
+  padding-top: 10px;
   margin-left: calc((100% - 1410px) / 2);
-
 }

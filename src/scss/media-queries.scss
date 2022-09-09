@@ -4,7 +4,12 @@
     overflow-x: hidden;
   }
 
-  h1 {
+  h1,
+  .page-title h1 {
+    font-size: 50px;
+  }
+
+  h3 {
     font-size: 30px;
   }
 
@@ -12,16 +17,15 @@
     font-size: 24px;
   }
 
-  // GENERAL UI ELEMENTS ---
-  .bordered-text {
-    padding-left: 2rem;
+  // BORDERS -------------
+  .br-only {
+    &:after {
+      right: 5px;
+      top: -8px;
+    }
   }
 
-  .arrow-link a {
-    font-size: 16px;
-    padding-right: 1.5rem;
-    background-size: 16px;
-  }
+  // GENERAL UI ELEMENTS ---
 
   .content {
     p,
@@ -32,9 +36,6 @@
     ul,
     ol {
       padding-left: 10px;
-    }
-    &.bordered {
-      box-shadow: 10px 10px #2e2e2e;
     }
   }
 
@@ -132,14 +133,6 @@
               transform: rotate(-85deg);
             }
           }
-        }
-      }
-      .mobile-lang-nav {
-        padding-top: 10px;
-        display: block;
-        padding-left: 0.5rem;
-        .lang-dropdown-select-element.form-select {
-          width: 61px;
         }
       }
       ul:not(.contextual-links):not(.dropdown) {
@@ -245,7 +238,7 @@
     height: auto;
     margin-bottom: 1.5rem;
     .owl-carousel {
-      height: 175px;
+      height: auto;
       .owl-stage-outer {
         overflow: visible;
       }
@@ -253,211 +246,77 @@
         top: 75px;
       }
       .owl-dots {
-        bottom: 15px;
+        bottom: -45px;
       }
     }
     .slide {
-      .text-box {
-        font-size: 16px;
-        margin-top: 165px;
-        padding: 1rem;
-        background: #fff;
-        border: 1px solid #2e2e2e;
-        box-shadow: 10px 12px rgba(46, 46, 46, 0.75);
-        p,
-        strong {
-          font-size: 16px;
-          line-height: 1.45;
+      .col-md-7 {
+        padding-right: 10px;
+      }
+      .br-only {
+        &:after {
+          right: 0;
         }
+      }
+      &--text {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+      &__title,
+      &__author {
+        font-size: 30px;
+      }
+      &__author {
+        margin-bottom: 1rem;
+      }
+      &__footer {
+        left: 20px;
       }
     }
   }
-  .two-img-narrative {
-    .bordered-text {
-      p {
-        font-size: 18px;
-      }
-    }
-    &--imgs {
-      margin-top: 1rem;
-      &:before {
-        background-size: contain;
-        position: absolute;
-        width: 132px;
-        height: 132px;
-        right: 91px;
-        top: -5px;
-        transform: rotate(13deg);
-      }
-      .narr-image {
-        width: 219px;
-        height: 219px;
-        img {
-          border: 5px solid #fff;
-        }
-        &:last-of-type {
-          left: 95px;
-          top: 160px;
-        }
-      }
+
+  .marquee {
+    margin: 6.5rem;
+    h1 {
+      font-size: 50px;
     }
   }
-  .image-textblock-section {
-    padding: 1.5rem 0 3rem 0;
-    h2 {
-      font-size: 30px;
-      padding-top: 1rem;
-      margin-top: 2.5rem;
-      padding-bottom: 2rem;
-    }
-    .textblock {
-      padding: 1rem 1.5rem;
-      box-shadow: 8px 8px #2e2e2e;
-      position: relative;
-      width: 100%;
-      p {
-        font-size: 16px;
-      }
-    }
-    .col-md-9 {
-      padding: 0;
-      margin-top: -2rem;
-    }
-    &.inner-page {
-      padding: 3rem 0;
-      h2 {
-        margin-top: 0;
-      }
-    }
+
+  .slider-carousel {
+    margin-left: 5px;
   }
-  .statistics-section {
-    padding: 4rem 0 0 0;
-    h2 {
-      font-size: 30px;
+  .destaquem-slider {
+    .col-md-3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
-    p {
-      font-size: 16px;
-    }
-    .ro:nth-of-type(2) {
-      margin-top: 1rem;
-    }
-    .row.numbers-row {
-      .col-md-6 {
-        margin: 1rem 0;
-        .number {
-          h4 {
-            font-size: 80px;
-          }
-        }
-        .summary {
-          width: auto;
-          p {
-            font-size: 16px;
-            line-height: 22px;
-          }
+    .slide-wrapper {
+      .des-slide {
+        padding: 5px 15px;
+        &:after {
+          right: 2.5px;
         }
       }
     }
   }
 
-  .pre-footer-narrative {
-    padding: 3.5rem 0 5rem 0;
-    h2 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.4;
-    }
-    &--img {
-      margin-top: 2rem;
-      margin-left: -3rem;
-      width: 344px;
-      height: 344px;
-      border: 1px solid #2e2e2e;
-      border-radius: 50%;
-      img {
-        border: 5px solid #fff;
-      }
-      &:after {
-        background-size: contain;
-        height: 216px;
-        width: 216px;
-        right: -29px;
-        bottom: -45px;
-      }
-    }
-  }
-  // Inner page elements
-  .basic-header {
-    max-height: 450px;
-    margin-bottom: 5rem;
-    .bordered-text {
-      background-size: 5%;
-      padding: 1rem 0 1rem 2rem;
-    }
-    h1 {
-      font-size: 30px;
-      margin-bottom: 1.5rem;
-    }
-    p {
-      font-size: 18px;
-    }
-    &--img {
-      height: 219px;
-      width: 219px;
-      filter: drop-shadow(10px 10px #2e2e2e);
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  .text-simple {
-    padding: 2rem 0;
-    &.heading {
-      h2 {
-        margin-left: 0;
-        font-size: 20px;
-        &:after {
-          top: unset;
-          left: 0;
-          bottom: -18px;
+  footer {
+    .form {
+      form {
+        > div {
+          width: 100%;
+          &:nth-of-type(even) {
+            width: 100%;
+            margin-left: 0;
+          }
         }
       }
-      p,
-      ul,
-      ol {
-        padding-left: 1.5rem;
-      }
+    }
+    .col-md-3:not(:last-of-type) {
+      border-right: 0;
     }
   }
-  .two-col-img-text {
-    padding: 3.5rem 0 5rem 0;
-    h2 {
-      font-size: 30px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.4;
-    }
-    &--img {
-      margin-top: 2rem;
-      margin-left: -3rem;
-      width: 344px;
-      height: 344px;
-      border: 1px solid #2e2e2e;
-      border-radius: 50%;
-      img {
-        border: 5px solid #fff;
-      }
-      &:after {
-        background-size: contain;
-        height: 216px;
-        width: 216px;
-        right: -29px;
-        bottom: -45px;
-      }
-    }
-  }
+  // closing brakcet below this
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {

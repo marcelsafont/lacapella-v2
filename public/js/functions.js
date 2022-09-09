@@ -3,6 +3,7 @@ $(document).ready(function () {
     items: 1,
     nav: false,
     dots: true,
+    margin: 50,
   });
 
   //dropdown hover intent
@@ -19,8 +20,24 @@ $(document).ready(function () {
     variableWidth: false,
     swipeToSlide: true,
     arrows: false,
-    slidesToScroll: 1,
-    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "10px",
+        },
+      },
+    ],
   });
 });
 
