@@ -149,4 +149,107 @@
   margin-left: calc((100% - 1410px) / 2);
 }
 
+.two-panel-production {
+  margin-top: 5rem;
+}
+.two-panel-production .row:last-of-type {
+  padding: 2rem 20px;
+}
+.two-panel-production--text p {
+  font-size: 22px;
+  line-height: 28px;
+}
+.two-panel-production--text p:last-of-type {
+  margin-top: 3rem;
+}
+.two-panel-production--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.espai-w-two-panel .borders:before, .espai-w-two-panel .borders:after {
+  border-color: #d9d9d9;
+}
+.espai-w-two-panel .borders:before {
+  top: 0;
+}
+.espai-w-two-panel .borders:after {
+  bottom: 0;
+}
+.espai-w-two-panel .top-row {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.espai-w-two-panel .top-row .col-md-3 {
+  display: flex;
+  justify-content: flex-end;
+}
+.espai-w-two-panel .row:last-of-type {
+  padding: 1rem 20px 2rem 20px;
+}
+.espai-w-two-panel .row .col-md-6 {
+  padding: 10px;
+}
+.espai-w-two-panel .row .col-md-6.br-only:after {
+  top: 0;
+}
+.espai-w-two-panel--block__tags {
+  margin-bottom: 3rem;
+}
+.espai-w-two-panel--block__tags span.type-tag {
+  padding: 14px 12px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 5px;
+}
+.espai-w-two-panel--block__image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.espai-w-two-panel--block__title p {
+  font-size: 20px;
+}
+.espai-w-two-panel--block.second-block .espai-w-two-panel--block__tags,
+.espai-w-two-panel--block.second-block .espai-w-two-panel--block__title {
+  margin-left: 3rem;
+}
+
+.publications-three-panel .top-row {
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+.publications-three-panel .top-row .col-md-3 {
+  display: flex;
+  justify-content: flex-end;
+}
+.publications-three-panel .borders.top-row:before {
+  top: 0;
+}
+.publications-three-panel--image {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.publications-three-panel--image img {
+  max-width: 90%;
+}
+.publications-three-panel--text p {
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.publications-three-panel .col-md-4.br-only:after {
+  right: 0;
+  top: 0;
+}
+.publications-three-panel .col-md-4.borders {
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=components.css.map */

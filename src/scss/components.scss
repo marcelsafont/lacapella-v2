@@ -166,3 +166,140 @@
   padding-top: 10px;
   margin-left: calc((100% - 1410px) / 2);
 }
+
+// Two Panel Production Component
+.two-panel-production {
+  margin-top: 5rem;
+  .row {
+    &:last-of-type {
+      padding: 2rem 20px;
+    }
+  }
+  &--text {
+    p {
+      font-size: 22px;
+      line-height: 28px;
+      &:last-of-type {
+        margin-top: 3rem;
+      }
+    }
+  }
+  &--image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Espai W Two Panel Homepage component
+.espai-w-two-panel {
+  .borders {
+    &:before,
+    &:after {
+      border-color: #d9d9d9;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+  }
+  .top-row {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    .col-md-3 {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .row {
+    &:last-of-type {
+      padding: 1rem 20px 2rem 20px;
+    }
+    .col-md-6 {
+      padding: 10px;
+      &.br-only {
+        &:after {
+          top: 0;
+        }
+      }
+    }
+  }
+  &--block {
+    &__tags {
+      margin-bottom: 3rem;
+      span.type-tag {
+        padding: 14px 12px;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        font-size: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+    &__image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    &__title {
+      p {
+        font-size: 20px;
+      }
+    }
+    &.second-block {
+      .espai-w-two-panel--block__tags,
+      .espai-w-two-panel--block__title {
+        margin-left: 3rem;
+      }
+    }
+  }
+}
+
+// Publications 3 Panel Block
+.publications-three-panel {
+  .top-row {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    .col-md-3 {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .borders {
+    &.top-row {
+      &:before {
+        top: 0;
+      }
+    }
+  }
+  &--image {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    img {
+      max-width: 90%;
+    }
+  }
+  &--text {
+    p {
+      font-size: 22px;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+  .col-md-4 {
+    &.br-only {
+      &:after {
+        right: 0;
+        top: 0;
+      }
+    }
+    &.borders {
+      padding: 1rem;
+    }
+  }
+}

@@ -19,6 +19,10 @@ img {
   display: none;
 }
 
+.bg-grey {
+  background: #d9d9d9;
+}
+
 // EFFECTS / BORDERS ------
 .borders {
   border: 1px solid #000;
@@ -53,11 +57,17 @@ img {
   &.br-0 {
     border-right: 0;
   }
+  &.bb-0 {
+    border-bottom: 0;
+  }
+  &.bl-0 {
+    border-left: 0;
+  }
 }
 
-.borders + .borders {
-  border-left: 0;
-}
+// .borders + .borders {
+//   border-left: 0;
+// }
 
 // .borders {
 //   padding: 10px;
