@@ -161,6 +161,7 @@ img {
 .page-title {
   h1 {
     font-size: 160px;
+    text-transform: uppercase;
   }
 }
 
@@ -221,14 +222,28 @@ img {
     }
     li {
       margin-right: 3rem;
+      padding:10px 0;
       &:last-child {
         padding-right: 0;
         border-right: 0;
         margin-right: 0;
       }
+     
     }
     .wrapper-menu {
+      padding:15px 0 15px 30px;
       display: none;
+      position:absolute;
+      top:55px;
+      border-bottom:1px solid #000;
+      z-index:10;
+      background-color:#fff;
+      width:100%;
+      left:0;
+      box-shadow: 0 4px 2px -2px gray;
+      &.open-desktop{
+        display:block;
+      }
     }
   }
 }

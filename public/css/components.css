@@ -167,6 +167,23 @@
   justify-content: center;
   align-items: center;
 }
+.two-panel-production .more-links {
+  margin-bottom: 120px;
+}
+.two-panel-production .more-links h3 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+.two-panel-production .more-links .links {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.two-panel-production .more-links .links > div {
+  padding: 15px 10px;
+}
+.two-panel-production .more-links .links div:nth-child(6) {
+  border-right: 0;
+}
 
 .espai-w-two-panel .borders:before, .espai-w-two-panel .borders:after {
   border-color: #d9d9d9;
@@ -250,6 +267,32 @@
 }
 .publications-three-panel .col-md-4.borders {
   padding: 1rem;
+}
+
+.hero-inner p {
+  padding: 10px 10px 20px 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+.hero-inner .links {
+  margin-top: 5px;
+  display: flex;
+  width: 100%;
+}
+.hero-inner .links > div {
+  flex: 1;
+}
+.hero-inner .links > div a {
+  padding: 40px 0 10px 0px;
+  display: inline-block;
+  font-size: 40px;
+}
+
+.highlight-two-cols .item-highlight:nth-child(odd) > div:first-child {
+  order: 1;
+}
+.highlight-two-cols .item-highlight:nth-child(odd) > div:nth-child(2) {
+  order: 0;
 }
 
 /*# sourceMappingURL=components.css.map */

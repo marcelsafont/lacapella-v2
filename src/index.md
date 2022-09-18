@@ -1,5 +1,5 @@
 ---
-title: home page
+title: La capella
 layout: base.njk
 ---
 
