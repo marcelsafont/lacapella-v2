@@ -134,6 +134,11 @@ img {
     padding: 12px 10px 10px;
     border: 1px solid #000000;
     border-radius: 10px;
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #000;
+    }
   }
 }
 

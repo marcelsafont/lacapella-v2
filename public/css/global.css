@@ -86,6 +86,10 @@ img {
   border: 1px solid #000000;
   border-radius: 10px;
 }
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  color: #fff;
+  background-color: #000;
+}
 
 .plus-btn {
   display: flex;
