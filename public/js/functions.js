@@ -7,12 +7,12 @@ $(document).ready(function () {
   });
 
   //dropdown hover intent
-  $(".menu-item--expanded > a").hoverIntent(
+  $(".menu-item--expanded").hoverIntent(
     function () {
-      $(this).parent().find(".wrapper-menu").addClass("open-desktop");
+      $(this).find(".wrapper-menu").addClass("open-desktop");
     },
     function () {
-      $(this).parent().find(".wrapper-menu").removeClass("open-desktop");
+      $(this).find(".wrapper-menu").removeClass("open-desktop");
     }
   );
   $(".des-carousel").slick({

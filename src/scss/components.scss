@@ -189,6 +189,23 @@
     justify-content: center;
     align-items: center;
   }
+  .more-links{
+    margin-bottom:120px;
+    h3{
+      font-size:40px;
+      padding:20px 0;
+    }
+    .links{
+      display:grid;
+      grid-template-columns: repeat(6, 1fr);
+      > div{
+        padding:15px 10px;
+      }
+      div:nth-child(6){
+        border-right:0;
+      }
+    }
+  }
 }
 
 // Espai W Two Panel Homepage component
@@ -300,6 +317,38 @@
     }
     &.borders {
       padding: 1rem;
+    }
+  }
+}
+
+.hero-inner{
+  p{
+    padding:10px 10px 20px 10px;
+    font-size:28px;
+    line-height:36px;
+  }
+  .links{
+    margin-top:5px;
+    display:flex;
+    width:100%;
+    > div{
+      flex:1;
+      a{
+        padding:40px 0 10px 0px;
+        display:inline-block;
+        font-size:40px;
+      }
+    }
+  }
+}
+
+.highlight-two-cols{
+  .item-highlight:nth-child(odd){
+    > div:first-child{
+      order:1;
+    }
+    > div:nth-child(2){
+      order:0;
     }
   }
 }

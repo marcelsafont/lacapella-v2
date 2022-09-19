@@ -113,6 +113,7 @@ img {
 
 .page-title h1 {
   font-size: 160px;
+  text-transform: uppercase;
 }
 
 .nav .is-active {
@@ -169,6 +170,7 @@ img {
 }
 .nav--main-nav li {
   margin-right: 3rem;
+  padding: 10px 0;
 }
 .nav--main-nav li:last-child {
   padding-right: 0;
@@ -176,7 +178,19 @@ img {
   margin-right: 0;
 }
 .nav--main-nav .wrapper-menu {
+  padding: 15px 0 15px 30px;
   display: none;
+  position: absolute;
+  top: 55px;
+  border-bottom: 1px solid #000;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 4px 2px -2px gray;
+}
+.nav--main-nav .wrapper-menu.open-desktop {
+  display: block;
 }
 
 #breadcrumb ol {
