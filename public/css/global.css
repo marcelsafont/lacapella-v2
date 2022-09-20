@@ -119,8 +119,13 @@ img {
 .nav .is-active {
   color: #ff4040 !important;
 }
+.nav .row {
+  justify-content: space-between;
+  align-items: center;
+}
 .nav ul:not(.contextual-links) {
   display: flex;
+  align-items: center;
 }
 .nav ul:not(.contextual-links).dropdown {
   display: none;
@@ -162,6 +167,13 @@ img {
   content: "";
   left: 0px;
 }
+.nav--logo {
+  padding: 10px;
+}
+.nav--logo a {
+  text-transform: uppercase;
+  font-size: 40px;
+}
 .nav--main-nav {
   padding: 10px;
 }
@@ -170,7 +182,6 @@ img {
 }
 .nav--main-nav li {
   margin-right: 3rem;
-  padding: 10px 0;
 }
 .nav--main-nav li:last-child {
   padding-right: 0;
@@ -187,7 +198,6 @@ img {
   background-color: #fff;
   width: 100%;
   left: 0;
-  box-shadow: 0 4px 2px -2px gray;
 }
 .nav--main-nav .wrapper-menu.open-desktop {
   display: block;

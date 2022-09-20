@@ -175,8 +175,13 @@ img {
   .is-active {
     color: #ff4040 !important;
   }
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
   ul:not(.contextual-links) {
     display: flex;
+    align-items: center;
     &.dropdown {
       display: none;
     }
@@ -220,6 +225,13 @@ img {
       }
     }
   }
+  &--logo {
+    padding: 10px;
+    a {
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+  }
   &--main-nav {
     padding: 10px;
     .mobile-button {
@@ -227,27 +239,24 @@ img {
     }
     li {
       margin-right: 3rem;
-      padding:10px 0;
       &:last-child {
         padding-right: 0;
         border-right: 0;
         margin-right: 0;
       }
-     
     }
     .wrapper-menu {
-      padding:15px 0 15px 30px;
+      padding: 15px 0 15px 30px;
       display: none;
-      position:absolute;
-      top:55px;
-      border-bottom:1px solid #000;
-      z-index:10;
-      background-color:#fff;
-      width:100%;
-      left:0;
-      box-shadow: 0 4px 2px -2px gray;
-      &.open-desktop{
-        display:block;
+      position: absolute;
+      top: 55px;
+      border-bottom: 1px solid #000;
+      z-index: 10;
+      background-color: #fff;
+      width: 100%;
+      left: 0;
+      &.open-desktop {
+        display: block;
       }
     }
   }
