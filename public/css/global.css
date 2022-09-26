@@ -91,6 +91,19 @@ img {
   background-color: #000;
 }
 
+.btn-wrapper.primary-wrapper a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 12px 10px 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+.btn-wrapper.primary-wrapper a:hover, .btn-wrapper.primary-wrapper a:focus {
+  color: #fff;
+  background-color: #000;
+}
+
 .plus-btn {
   display: flex;
   align-items: center;
@@ -109,6 +122,10 @@ img {
   transform: translateY(-30px);
   border-left: 1px solid #000;
   left: 50%;
+}
+.plus-btn.no-text {
+  height: 100px;
+  width: 100px;
 }
 
 .page-title h1 {

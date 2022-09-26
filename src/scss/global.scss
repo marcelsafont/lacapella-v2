@@ -126,18 +126,44 @@ img {
 }
 
 // BUTTONS ----
-.btn {
+
+@mixin btn {
   display: inline-block;
   text-transform: uppercase;
   font-size: 24px;
+}
+
+@mixin btnPrimary {
+  padding: 12px 10px 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+@mixin btnPrimaryHover {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn {
+  @include btn;
   &.btn-primary {
-    padding: 12px 10px 10px;
-    border: 1px solid #000000;
-    border-radius: 10px;
+    @include btnPrimary;
     &:hover,
     &:focus {
-      color: #fff;
-      background-color: #000;
+      @include btnPrimaryHover;
+    }
+  }
+}
+
+.btn-wrapper {
+  &.primary-wrapper {
+    a {
+      @include btn;
+      @include btnPrimary;
+      &:hover,
+      &:focus {
+        @include btnPrimaryHover;
+      }
     }
   }
 }
@@ -159,6 +185,10 @@ img {
       border-left: 1px solid #000;
       left: 50%;
     }
+  }
+  &.no-text {
+    height: 100px;
+    width: 100px;
   }
 }
 
