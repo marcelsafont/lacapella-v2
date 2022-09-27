@@ -104,6 +104,26 @@ img {
   background-color: #000;
 }
 
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.toggle-btn span {
+  font-size: 20px;
+  font-family: "m-bold";
+}
+.toggle-btn img {
+  padding-left: 5px;
+  transform: rotate(45deg);
+  transition: 0.15s ease-in-out transform;
+}
+.toggle-btn.open img {
+  transform: rotate(0);
+}
+
 .plus-btn {
   display: flex;
   align-items: center;
@@ -287,6 +307,13 @@ footer {
 }
 footer h3 {
   text-transform: uppercase;
+}
+footer h5 {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+footer p {
+  margin-bottom: 8px;
 }
 footer .bl-special {
   border-left: 1px solid #000;

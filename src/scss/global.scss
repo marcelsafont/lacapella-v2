@@ -168,6 +168,28 @@ img {
   }
 }
 
+.toggle-btn {
+  span {
+    font-size: 20px;
+    font-family: 'm-bold';
+  }
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+    img {
+      padding-left: 5px;
+      transform: rotate(45deg);
+      transition: .15s ease-in-out transform;
+    }
+    &.open {
+      img {
+        transform: rotate(0);
+      }
+    }
+}
+
 .plus-btn {
   display: flex;
   align-items: center;
@@ -366,6 +388,13 @@ footer {
   margin-top: 7rem;
   h3 {
     text-transform: uppercase;
+  }
+  h5 {
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    margin-bottom: 8px;
   }
   .bl-special {
     border-left: 1px solid #000;

@@ -80,3 +80,24 @@ $(document).ready(function () {
   // Selectric below -------
   $("#edit-lang-dropdown-select").selectric();
 });
+
+// Article slider toggles
+$(document).ready(function(){
+  $('.toggle-images-btn').click(function(e) {
+    e.preventDefault();
+    $(".toggle-images").toggleClass('closed');
+    $(this).toggleClass('open');
+    $(this).hasClass("open")
+      ? $(this).children(".text").text("Tancar")
+      : $(this).children(".text").text("Obrir");
+    $(this).closest('.borders').toggleClass('opened');
+  })
+
+    $(".toggle-videos-btn").click(function (e) {
+      e.preventDefault();
+      $(".toggle-videos").toggleClass("closed");
+      $(this).toggleClass("open");
+      $(this).hasClass("open") ? $(this).children('.text').text("Tancar") : $(this).children('.text').text("Obrir");
+      $(this).closest(".borders").toggleClass("opened");
+    });
+})
