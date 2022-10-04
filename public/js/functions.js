@@ -7,14 +7,30 @@ $(document).ready(function () {
   });
 
   //dropdown hover intent
-  $(".menu-item--expanded").hoverIntent(
-    function () {
-      $(this).find(".wrapper-menu").addClass("open-desktop");
-    },
-    function () {
-      $(this).find(".wrapper-menu").removeClass("open-desktop");
-    }
-  );
+  // $(".menu-item--expanded").hoverIntent(
+  //   function () {
+  //     $(this).find(".wrapper-menu").addClass("open-desktop");
+  //   },
+  //   function () {
+  //     $(this).find(".wrapper-menu").removeClass("open-desktop");
+  //   }
+  // );
+  $(".menu-item--expanded > a").click(function(e){
+    e.preventDefault();
+    $('.wrapper-menu').removeClass('open-desktop');
+    $(this).parent().find('.wrapper-menu').addClass('open-desktop')
+  })
+
+  $('#search-form').click(function(){
+    $('.views-exposed-form').addClass('show-form');
+  })
+
+  $('#close-form').click(function(){
+    $('.views-exposed-form').removeClass('show-form');
+  })
+
+
+
   $(".des-carousel").slick({
     infinite: false,
     variableWidth: false,
