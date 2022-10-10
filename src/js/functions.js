@@ -1,11 +1,41 @@
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    items: 1,
-    nav: false,
-    dots: true,
-    margin: 50,
-  });
+// $(document).ready(function () {
+//   $(".owl-carousel").owlCarousel({
+//     items: 1,
+//     nav: false,
+//     dots: true,
+//     margin: 50,
+//   });
 
+  $(window).on('load', function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      nav: false,
+      dots: true,
+      margin: 50,
+    });
+
+    $(".des-carousel").slick({
+      infinite: false,
+      variableWidth: false,
+      swipeToSlide: true,
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: "10px",
+          },
+        },
+      ],
+    });
+  })
+
+$(document).ready(function () {
   //dropdown hover intent
   // $(".menu-item--expanded").hoverIntent(
   //   function () {
@@ -15,6 +45,7 @@ $(document).ready(function () {
   //     $(this).find(".wrapper-menu").removeClass("open-desktop");
   //   }
   // );
+  $('.custom-select select').selectric();
   $(".menu-item--expanded > a").click(function(e){
     e.preventDefault();
     $('.wrapper-menu').removeClass('open-desktop');
@@ -31,30 +62,7 @@ $(document).ready(function () {
 
 
 
-  $(".des-carousel").slick({
-    infinite: false,
-    variableWidth: false,
-    swipeToSlide: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 2000,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: true,
-          centerPadding: "10px",
-        },
-      },
-    ],
-  });
+  
 });
 
 // $(document).ready(function () {

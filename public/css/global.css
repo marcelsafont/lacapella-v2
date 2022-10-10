@@ -35,6 +35,17 @@ img {
 .bg-grey #breadcrumb ol li:last-child a {
   background-color: #000;
 }
+.bg-grey .nav.main-menu {
+  background-color: #d9d9d9;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
 
 .borders {
   border: 1px solid #000;
@@ -149,23 +160,39 @@ img {
   background-image: url("../assets/cross-btn.svg");
   background-repeat: no-repeat;
   background-position: right center;
+  transition: all 0.3s;
 }
-.plus-btn.no-text {
-  height: 80px;
-  width: 80px;
+.plus-btn.with-text {
+  margin-top: 70px;
+}
+.plus-btn.with-text a {
+  background-position: center center;
+}
+.plus-btn.with-text span {
+  display: none;
+  padding-left: 20px;
+}
+.plus-btn.with-text:hover span {
+  display: inline-block;
+}
+.plus-btn.big:hover a {
+  background-image: url("../assets/corss-btn-hover.svg");
+  background-position: right 1px center 1px;
 }
 .plus-btn.big a {
-  padding-right: 60px;
+  padding: 50px;
+  background-size: 90px 90px;
 }
 .plus-btn.medium {
   padding-right: 50px;
 }
+.plus-btn.small:hover a {
+  background-image: url("../assets/corss-btn-hover.svg");
+  background-position: right 1px center;
+}
 .plus-btn.small a {
   padding: 40px 80px 40px 0;
   background-size: 60px 60px;
-}
-.plus-btn.small a:hover {
-  background-image: url("../assets/corss-btn-hover.svg");
 }
 
 .page-title h1 {
@@ -260,6 +287,17 @@ img {
 }
 .nav--main-nav .wrapper-menu.open-desktop {
   display: block;
+}
+
+.nav.main-menu {
+  position: fixed !important;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.page-title {
+  padding-top: 80px;
 }
 
 #breadcrumb ol {
@@ -497,6 +535,10 @@ footer .footer-links ul li:not(:last-child) {
 }
 .views-exposed-form.show-form {
   display: flex;
+}
+
+.bg-grey .views-exposed-form .borders:after, .bg-grey .views-exposed-form .borders:before {
+  border-color: #fff !important;
 }
 
 /*# sourceMappingURL=global.css.map */

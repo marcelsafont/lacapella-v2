@@ -1,6 +1,6 @@
 ---
 title: La capella
-layout: base.njk
+layout: base-home.njk
 ---
 
 {% include 'paragraphs/paragraph-home-top-slider.njk' %}

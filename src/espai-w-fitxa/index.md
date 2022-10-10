@@ -1,6 +1,6 @@
 ---
 title: Project Page One
-layout: base-project.njk
+layout: base-project-w.njk
 ---
 
 {% include 'paragraphs/project-header-image-left.njk' %}

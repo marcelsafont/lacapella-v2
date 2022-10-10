@@ -353,19 +353,7 @@
   }
   .publications-three-panel {
     .row {
-      .col-md-4 {
-        &:not(:first-child) {
-          display: none;
-        }
-        &.br-only {
-          &:after {
-            border-right: 0;
-          }
-        }
-        &.borders {
-          border-right: 0;
-        }
-      }
+     
       &.top-row {
         padding-bottom: 15px;
         display: flex;
@@ -458,6 +446,36 @@
         }
       }
     }
+  }
+  .hero-inner{
+    .links{
+      display:block;
+      > div{
+        &:after{
+          display:none;
+        }
+      }
+    }
+  }
+  .two-panel-production{
+    .more-links{
+      width:100%;
+      .links{
+        display:block;
+        > div{
+          width:100%;
+        }
+      }
+    }
+  }
+  .big-cta{
+    margin-top:50px;
+    .container .row{
+      padding:100px 30px;
+    }
+  }
+  .marquee h2{
+    font-size:60px;
   }
   // closing brakcet below this
 }
