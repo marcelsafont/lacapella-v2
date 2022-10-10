@@ -52,6 +52,9 @@
 .home-top-slider .slide .col-md-5, .slider-programs .slide .col-md-5 {
   padding-right: 2px;
 }
+.home-top-slider.project-header-image-left, .slider-programs.project-header-image-left {
+  padding-top: 80px;
+}
 .home-top-slider.project-header-image-left .col-md-7, .slider-programs.project-header-image-left .col-md-7 {
   padding-left: 0;
 }
